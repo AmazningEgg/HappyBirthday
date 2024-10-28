@@ -115,7 +115,7 @@ let textone = document.querySelector('.textone').querySelector('h1');
         textone.innerHTML = '今天是属于你的一天';
         texttwo.innerHTML = '宝宝天天开心呢';
         textthree.innerHTML = '生日快乐！！！';
-      },112500)
+      },60000)
 
 
  

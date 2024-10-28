@@ -11,6 +11,59 @@ body {
     overflow: hidden;
     perspective: 1300px;
 }
+/* 自动轮播样式 */ 
+ .banner-container{
+	width:1699px;
+	height:834px;
+	/* 轮播图居中 */
+	margin:1rem auto;
+	/* 隐藏超出展示容器的内容 */
+	overflow: hidden;
+	position: absolute;
+}
+
+.banner-container .banner-img-container {
+	width:8495px;
+	height: 834px;
+	overflow: hidden;
+	position: absolute;
+	/* 开启弹性盒，让图片横向排列 */
+	display: flex;
+	animation: run 50s ease infinite;
+}
+
+.banner-container .banner-img-container img{
+	width:1699px;
+	height:100%;
+}
+
+/* 动画关键帧 */
+@keyframes run {
+	0%,10%{
+		/* margin-left: 0; */
+		transform: translateX(0);
+	}
+	20%,30%{
+		/* margin-left: -1200px;; */
+		transform: translateX(-1699px);
+	}
+	40%,50%{
+		/* margin-left: -2400px; */
+		transform: translateX(-3398px);
+	}
+	60%,70%{
+		/* margin-left: -3600px; */
+		transform: translateX(-5097px);
+	}
+	80%,90%{
+		/* margin-left: -4800px; */
+		transform: translateX(-6796px);
+	}
+	100%{
+		/* margin-left: 0; */
+		transform: translateX(0);
+	}
+}
 #videofilm {
     width: 100%;
     height: auto;
