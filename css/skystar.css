@@ -14,7 +14,7 @@ body {
 /* 自动轮播样式 */ 
  .banner-container{
 	width:1699px;
-	height:834px;
+	height:950px;
 	/* 轮播图居中 */
 	margin:1rem auto;
 	/* 隐藏超出展示容器的内容 */
@@ -24,7 +24,7 @@ body {
 
 .banner-container .banner-img-container {
 	width:8495px;
-	height: 834px;
+	height: 950px;
 	overflow: hidden;
 	position: absolute;
 	/* 开启弹性盒，让图片横向排列 */
